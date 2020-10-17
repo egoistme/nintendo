@@ -1,0 +1,145 @@
+main h1 {
+  text-align: center;
+  font-weight: 400;
+}
+main .signIn-card {
+  width: 460px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #888888;
+  min-height: 200px;
+  background-color: #fff;
+}
+main .signIn-card .input-container {
+  height: 50px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid;
+}
+main .signIn-card .input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 30px;
+  background-color: inherit;
+}
+main .signIn-card .hasAccount {
+  border: 3px solid #ffe7b8;
+  background-color: #fff8c6;
+}
+main .signIn-card .row {
+  display: flex;
+  justify-content: space-between;
+}
+main .signIn-card .row > div {
+  display: flex;
+  align-items: center;
+}
+main .signIn-card .row > div i {
+  width: 12px;
+  height: 12px;
+  background: url(../images/SignInAndRegImages/右箭头.png);
+  background-size: cover;
+}
+main .signIn-card .row > div span {
+  font-size: 14px;
+}
+main .signIn-card .row button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #e60012;
+  border: none;
+  color: #ffffff;
+  transition: 0.2s;
+  outline: none;
+}
+main .signIn-card .row button:hover {
+  background-color: #ed4c59;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main .signIn-card .otherWay {
+  box-sizing: border-box;
+  padding: 0 40px 40px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+main .signIn-card .otherWay p {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn {
+  margin: 10px;
+  height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:hover {
+  cursor: pointer;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn .icon {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(1) {
+  background-color: #1877f2;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(1):hover {
+  background-color: #5da0f6;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(2) {
+  background-color: #ffffff;
+  border: 1px solid #bcbcbc;
+  color: #000;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(2):hover {
+  color: #888888;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(3) {
+  background-color: #1da1f2;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(3):hover {
+  background-color: #5da0f6;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(4) {
+  background-color: #000000;
+}
+main .signIn-card .otherWay .chooseBtn-container .chooseBtn:nth-child(4):hover {
+  background-color: #4c4c4c;
+}
+main .signIn-card p {
+  font-size: 13px;
+  text-align: center;
+}
+main .signIn-card a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #cdcdcd;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+main .signIn-card a:hover {
+  cursor: pointer;
+  background-color: #aaaaaa;
+}
+footer {
+  position: relative !important;
+  margin-top: 100px;
+}

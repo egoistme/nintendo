@@ -1,0 +1,162 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 14px;
+}
+header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/indexImages/logo-nintendo.svg) no-repeat center center;
+  background-size: 100px;
+  background-color: #e60012;
+  width: 130px;
+  height: 70px;
+}
+.hide {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.m-5 {
+  margin: 0 50px !important;
+}
+main .chooseCard-container {
+  margin-top: 50px;
+}
+main .chooseCard-container h1 {
+  text-align: center;
+  font-weight: 400;
+}
+main .chooseCard-container .chooseCard {
+  width: 640px;
+  background-color: #fff;
+  padding-top: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+main .chooseCard-container .chooseCard p {
+  text-align: center;
+  font-size: 13px;
+}
+main .chooseCard-container .chooseCard .choose-item {
+  margin-top: 20px;
+  width: inherit;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+main .chooseCard-container .chooseCard .choose-item .signIn-item,
+main .chooseCard-container .chooseCard .choose-item .newAccount-item {
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+}
+main .chooseCard-container .chooseCard .choose-item .signIn-item span,
+main .chooseCard-container .chooseCard .choose-item .newAccount-item span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #757575;
+}
+main .chooseCard-container .chooseCard .choose-item .signIn-item a,
+main .chooseCard-container .chooseCard .choose-item .newAccount-item a {
+  display: block;
+  margin: 10px auto;
+  width: inherit;
+  height: 40px;
+  background-color: #e60012;
+  color: white;
+  font-weight: 300;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: 0.2s;
+  text-decoration: none;
+}
+main .chooseCard-container .chooseCard .choose-item .signIn-item a:hover,
+main .chooseCard-container .chooseCard .choose-item .newAccount-item a:hover {
+  cursor: pointer;
+  background-color: #ed4c59;
+  transition: 0.2s;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .link-item {
+  margin: 0 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+footer .link-item i {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/SignInAndRegImages/右箭头.png);
+  background-size: cover;
+}
+footer .link-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .language-selector {
+  width: 150px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+footer .language-selector:hover {
+  cursor: pointer;
+}
+footer .language-selector span {
+  line-height: 30px;
+  margin-left: 10px;
+}
+footer .language-selector i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/SignInAndRegImages/上箭头.png) center center;
+  background-size: contain;
+}
+footer .language-selector .languagesChooseBox {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 66px;
+  border-radius: 5px;
+  width: inherit;
+  display: none;
+}
+footer .language-selector .languagesChooseBox p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+footer .language-selector .languagesChooseBox p:hover {
+  background-color: #0078d7;
+  color: white;
+}

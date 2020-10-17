@@ -1,0 +1,1238 @@
+//Common
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input {
+  outline: none;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.d-block {
+  display: block !important;
+}
+//keyframe
+@keyframes bg-img-float-left {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes bg-img-float-right {
+  0% {
+    top: 80px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+//INDEX
+header {
+
+ 
+ 
+ 
+  background-color: #fff;
+  .wrapper {
+    height: 42px;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    .logo-Nintendo {
+      display: block;
+      width: 165px;
+      height: 110px;
+      background-color: #e60012;
+      border-radius: 0 0 15px 15px;
+      box-sizing: border-box;
+      padding: 50px 20px;
+      position: absolute;
+      z-index: 1;
+      top: -25px;
+      left: 0;
+      transition: ease-in-out 0.2s;
+      &:hover {
+        top: 0;
+        transition: ease-in-out 0.3s;
+      }
+    }
+    .searchBox {
+      width: 400px;
+      height: inherit;
+      border-radius: 20px;
+      box-sizing: border-box;
+      border: 1px solid #a7a7a7;
+      padding: 4px 20px;
+      position: relative;
+      input {
+        width: 85%;
+        height: 30px;
+        border: none;
+        font-size: 15px;
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+      .icon-search {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .regionChange {
+      width: 150px;
+      height: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      margin: 0 10px;
+    }
+    .login-reg {
+      display: block;
+      width: 150px;
+      height: inherit;
+      background-color: #e60012;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 2px;
+      &:hover {
+        background-color: #ce181e;
+      }
+      img {
+        margin: 5px;
+        //   display: block;
+        border-right: 1px solid white;
+        padding-right: 5px;
+      }
+      span {
+        font-size: 13px;
+        color: white;
+      }
+    }
+    .user-signIn {
+      width: 150px;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      justify-content: center;
+      .username {
+        margin-right: 5px;
+        &:hover {
+          color: #5566b4;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .nav-main {
+    height: 30px;
+    background: linear-gradient(#f5f5f5, #dadada);
+    margin-top: 5px;
+    ul {
+      width: 1280px;
+      margin: 0 auto;
+      height: inherit;
+      display: flex;
+      justify-content: flex-end;
+      text-align: center;
+      font-size: 14px;
+      li {
+        display: inline-block;
+        height: inherit;
+        line-height: 30px;
+        width: 150px;
+        &:hover {
+          cursor: pointer;
+        }
+        &:nth-child(1):hover {
+          background-color: #ffffff;
+        }
+        &:nth-child(2):hover {
+          background-color: #ce181e;
+          color: white;
+        }
+        &:nth-child(3):hover {
+          background-color: #ff7d00;
+          color: white;
+        }
+        &:nth-child(4):hover {
+          background-color: #ffffff;
+        }
+        &:nth-child(5):hover {
+          color: white;
+          background-color: #ff3f3f;
+        }
+        &:nth-child(6):hover {
+          background-color: #00bff3;
+          color: white;
+        }
+        &:nth-child(7):hover {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+//主体部分
+main {
+
+  .banner {
+
+    height: 700px;
+    overflow: hidden;
+    > img {
+      min-width: 1900px;
+      position: absolute;
+      z-index: -1;
+    }
+    // > video {
+    //   width: 100%;
+    //   min-width: 960px;
+    //   position: absolute;
+    //   z-index: -1;
+    //   margin: 0 auto;
+
+    // }
+
+    ul.nav-second-container {
+     
+      width: 100%;
+      height: 510px;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+      a{
+        display: block;
+      }
+      li.nav-second {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        .nav-second-items-container {
+          width: 960px;
+          height: inherit;
+          margin: 25px auto;
+          display: flex;
+          justify-content: space-around;
+          position: relative;
+          .nav-second-leftBox {
+            width: 225px;
+            height: 460px;
+            .nav-second-leftItems {
+              width: 100%;
+              height: 335px;
+              border-radius: 15px;
+              position: relative;
+              box-sizing: border-box;
+              overflow: hidden;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 225px;
+                height: 335px;
+                border-radius: 15px;
+                transition: 0.3s;
+              }
+              .bg-layer {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                display: none;
+              }
+              &:hover {
+                cursor: pointer;
+                &::before {
+                  filter: blur(5px);
+                  transform: scale(1.1);
+                  transition: ease-in-out 0.3s;
+                }
+                .bg-layer {
+                  display: block;
+                }
+                .link-title {
+                  font-size: 26px;
+                  margin-top: 50%-10px;
+                  transition: ease-in-out 0.3s;
+                  color: white;
+                  z-index: 1;
+                }
+                .link-title-bottom {
+                  bottom: 12%;
+                  color: white;
+                  font-size: 15px;
+                }
+              }
+              .link-title {
+                text-align: center;
+                font-size: 24px;
+                margin-top: 8%;
+                transition: ease-in-out 0.3s;
+                position: absolute;
+                width: inherit;
+              }
+              .link-title-bottom {
+                font-size: 14px;
+                text-align: center;
+                transition: ease-in-out 0.3s;
+                position: absolute;
+                width: inherit;
+                bottom: 5%;
+              }
+            }
+            .nav-second-linkBtn {
+              width: 100%;
+              height: 95px;
+              border-radius: 15px;
+              background-color: orange;
+              margin-top: 15px;
+              border: 3px solid orange;
+              font-size: 30px;
+              box-sizing: border-box;
+              transition: ease-in-out 0.3s;
+
+              &:hover {
+                cursor: pointer;
+                background-color: rgba(226, 11, 11);
+                color: white;
+                transition: ease-in-out 0.2s;
+              }
+            }
+          }
+          .nav-second-rightBox {
+            width: 735px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 460px;
+            .nav-second-rightItems {
+              width: 225px;
+              height: 215px;
+              border-radius: 15px;
+              margin-left: 15px;
+              position: relative;
+              box-sizing: border-box;
+              overflow: hidden;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 225px;
+                height: 215px;
+                border-radius: 15px;
+                transition: 0.3s;
+              }
+              .bg-layer {
+                background-color: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                display: none;
+              }
+              &:hover {
+                cursor: pointer;
+                &::before {
+                  filter: blur(5px);
+                  transform: scale(1.1);
+                  transition: ease-in-out 0.3s;
+                }
+                .bg-layer {
+                  display: block;
+                }
+                .link-title {
+                  font-size: 19px;
+                  margin-top: 50%-10px;
+                  transition: ease-in-out 0.3s;
+                  color: white;
+                  z-index: 1;
+                }
+              }
+              .link-title {
+                text-align: center;
+                font-size: 17px;
+                margin-top: 8%;
+                transition: ease-in-out 0.3s;
+                position: absolute;
+                width: inherit;
+              }
+            }
+          }
+          > img {
+            position: absolute;
+          }
+          .floatBgImg1 {
+            left: -300px;
+            animation: bg-img-float-left 3s ease-in-out infinite;
+          }
+          .floatBgImg2 {
+            left: -260px;
+            bottom: -90px;
+          }
+          .floatBgImg3 {
+            right: -260px;
+            top: 80px;
+            animation: bg-img-float-right 3s ease-in-out 1s infinite;
+          }
+          .floatBgImg4 {
+            right: 0px;
+            bottom: 200px;
+          }
+          .floatBgImg5 {
+            right: -360px;
+            bottom: 90px;
+          }
+          .floatBgImg6 {
+            right: -240px;
+            bottom: 90px;
+          }
+          .floatBgImg7 {
+            right: -120px;
+            bottom: 90px;
+          }
+
+          // &:nth-child(2) {
+          //   background-color: #ce181e;
+          //   color: white;
+          // }
+          // &:nth-child(3) {
+          //   background-color: #ff7d00;
+          //   color: white;
+          // }
+          // &:nth-child(4) {
+          //   background-color: #ffffff;
+          // }
+          // &:nth-child(5) {
+          //   color: white;
+          //   background-color: #ff3f3f;
+          // }
+          // &:nth-child(6) {
+          //   background-color: #00bff3;
+          //   color: white;
+          // }
+          // &:nth-child(7) {
+          //   background-color: #ffffff;
+          // }
+        }
+        &:nth-child(1) {
+          display: none;
+          background: linear-gradient(#fff 25%, #eeee 100%);
+          background-color: #fff;
+          .nav-second-leftItems {
+            border: 3px solid #e70012;
+            color: #fff;
+            background-color: #e70012;
+            &::before {
+              background: url(../images/indexImages/home.jpg) center 60px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #e70012;
+            color: #fff;
+            background-color: #e70012;
+            &::before {
+              background: no-repeat center bottom;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/system.jpg);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/onlineservice.jpg);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/games.jpg);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/lite.jpg);
+            }
+            &:nth-child(5)::before {
+              background-image: url(../images/indexImages/accessories.jpg);
+            }
+            &:nth-child(6)::before {
+              background-image: url(../images/indexImages/labo.jpg);
+            }
+          }
+        }
+        &:nth-child(2) {
+          display: none;
+          background-color: #ce181e;
+          .nav-second-leftItems {
+            border: 3px solid #ee0007;
+            color: #fff;
+            background-color: #ee0007;
+            &::before {
+              background: url(../images/indexImages/3ds.png) center 100px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #ee0007;
+            color: #fff;
+            background-color: #ee0007;
+            &::before {
+              background: no-repeat center bottom;
+              background-size: 225px;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/overview.png);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/games.png);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/features.png);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/built-in-software.png);
+            }
+            &:nth-child(5)::before {
+              background-image: url(../images/indexImages/faq.png);
+            }
+            &:nth-child(6)::before {
+              background-image: url(../images/indexImages/labo.jpg);
+            }
+          }
+        }
+        &:nth-child(3) {
+          display: none;
+          background-color: #ff7d00;
+          .nav-second-leftItems {
+            border: 3px solid #f7a324;
+            color: #fff;
+            background-color: #f7a327;
+            &::before {
+              background: url(../images/indexImages/game-store.png) center 100px;
+              background-size: 225px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #f7a324;
+            color: #fff;
+            background-color: #f7a324;
+            &::before {
+              background: no-repeat center bottom;
+              background-size: 225px;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/switch-games.jpg);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/games.png);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/nintendo-3ds-games.jpg);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/mobile-games.jpg);
+            }
+            &:nth-child(5)::before {
+              background-image: url(../images/indexImages/sales-and-offers.jpg);
+            }
+            &:nth-child(6)::before {
+              background-image: url(../images/indexImages/star.jpg);
+            }
+          }
+        }
+        &:nth-child(4) {
+          display: none;
+          background: url(../images/indexImages/bg-amiibo.png);
+          background-color: #fff;
+          .nav-second-leftItems {
+            border: 3px solid #0a7cc0;
+            color: #fff;
+            background-color: #0a7cc0;
+            &::before {
+              background: url(../images/indexImages/plant-amiibo.png) center
+                100px;
+              background-size: 225px;
+            }
+          }
+          .nav-second-rightItems {
+            color: #fff;
+            &::before {
+              background: no-repeat center bottom;
+              background-size: 225px;
+            }
+            &:nth-child(1) {
+              border: 3px solid #e6001e;
+              background-color: #e6001e;
+              &::before {
+                background-image: url(../images/indexImages/what-is-amiibo.png);
+              }
+            }
+
+            &:nth-child(2) {
+              border: 3px solid #0076dc;
+              background-color: #0076dc;
+              &::before {
+                background-image: url(../images/indexImages/lineup.png);
+              }
+            }
+            &:nth-child(3) {
+              border: 3px solid #677f11;
+              background-color: #677f11;
+              &::before {
+                background-image: url(../images/indexImages/games\(2\).png);
+              }
+            }
+            &:nth-child(4) {
+              border: 3px solid #158571;
+              background-color: #158571;
+              &::before {
+                background-image: url(../images/indexImages/compatibility.png);
+              }
+            }
+            &:nth-child(5) {
+              border: 3px solid #e11d78;
+              background-color: #e11d78;
+              &::before {
+                background-image: url(../images/indexImages/faq.png);
+              }
+            }
+          }
+        }
+        &:nth-child(5) {
+          display: none;
+          background-color: #ff3f3f;
+          .nav-second-leftItems {
+            border: 3px solid #fa6a6a;
+            color: #fff;
+            background-color: #fa6a6a;
+            height: 445px !important;
+            &::before {
+              background: url(../images/indexImages/play-nintendo.jpg) center
+                100px;
+              background-size: 225px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #fa6a6a;
+            color: #fff;
+            background-color: #fa6a6a;
+            &::before {
+              background: no-repeat center bottom;
+              background-size: 225px;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/donkey-kong-diddy-kong.jpg);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/lakitu.jpg);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/peach.jpg);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/baby-mario-and-yoshi.jpg);
+            }
+          }
+        }
+        &:nth-child(6) {
+          display: none;
+          background-color: #00bff3;
+          .nav-second-leftItems {
+            border: 3px solid #55d4f7;
+            color: #fff;
+            background-color: #55d4f7;
+            height: 445px !important;
+            &::before {
+              background: url(../images/indexImages/mario.jpg) center 100px;
+              background-size: 225px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #55d4f7;
+            color: #fff;
+            background-color: #55d4f7;
+            &::before {
+              background: no-repeat center center;
+              background-size: 100px;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/icon-joy-con.svg);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/threeds-support.svg);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/support-forums.svg);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/digital-purchases.svg);
+            }
+            &:nth-child(5)::before {
+              background-image: url(../images/indexImages/internet-connections.svg);
+            }
+            &:nth-child(6)::before {
+              background-image: url(../images/indexImages/set-up-repair.svg);
+            }
+          }
+        }
+        &:nth-child(7) {
+          display: none;
+          background-color: #fa6a6a;
+          .nav-second-leftItems {
+            border: 3px solid #e70012;
+            color: #fff;
+            background-color: #e70012;
+            height: 445px !important;
+            &::before {
+              background: url(../images/indexImages/my-nintendo-mii.jpg) center
+                100px;
+              background-size: 225px;
+            }
+          }
+          .nav-second-rightItems {
+            border: 3px solid #e70012;
+            color: #fff;
+            background-color: #e70012;
+            &::before {
+              background: no-repeat center center;
+              background-size: 130px;
+            }
+            &:nth-child(1)::before {
+              background-image: url(../images/indexImages/logo-my-nintendo.svg);
+            }
+            &:nth-child(2)::before {
+              background-image: url(../images/indexImages/rewards.svg);
+            }
+            &:nth-child(3)::before {
+              background-image: url(../images/indexImages/missions.svg);
+            }
+            &:nth-child(4)::before {
+              background-image: url(../images/indexImages/about-points.jpg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .info-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    .standard {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 640px;
+
+      margin: 0 auto;
+      span {
+        font-size: 26px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        background-color: #e70012;
+        color: white;
+        border-radius: 5px;
+        transition: 0.1s;
+        border: none;
+        &:hover {
+          cursor: pointer;
+          background-color: #ac000d;
+          transition: 0.1s;
+        }
+      }
+      .infoboard {
+        width: 200px;
+
+        .info {
+          font-size: 12px;
+        }
+        hr {
+          border: 1px solid;
+        }
+      }
+    }
+    > hr {
+      margin: 60px;
+      width: 80%;
+    }
+  }
+  .carousel-container {
+    .carousel-window {
+      width: 100%;
+      overflow: hidden;
+      ul.carousel-content {
+        width: 4150px;
+        display: flex;
+        justify-content: space-around;
+
+        li.carousel-item {
+          margin: 50px auto;
+          display: block;
+          width: 280px;
+          padding: 6px;
+          text-align: center;
+          box-sizing: border-box;
+          position: relative;
+          &::before {
+            content: "";
+            opacity: 0;
+            width: 280px;
+            height: 263px;
+            position: absolute;
+            top: -10px;
+            left: -5px;
+            background-color: transparent;
+            border: 6px dashed #555454;
+            z-index: -1;
+          }
+          &:hover {
+            cursor: pointer;
+            &::before {
+              opacity: 1;
+            }
+            .game-title {
+              color: #db0011;
+              transition: 0.4s;
+            }
+          }
+          .game-title {
+            padding: 0 6px;
+            font-size: 22px;
+            text-align: center;
+            transition: 0.4s;
+          }
+          .game-plat {
+            font-size: 14px;
+            padding: 6px 3px;
+            border-bottom: 1px solid red;
+          }
+        }
+      }
+      .traceline-container {
+        width: 60%;
+        height: 10px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 2px solid #444444;
+        .traceline {
+          width: 46%;
+          height: 10px;
+          background-color: #333333;
+          border-radius: 10px;
+
+          // margin-left: 80%;
+        }
+      }
+    }
+  }
+  .notice-container {
+    width: 1180px;
+    height: 227px;
+    background: url(../images/indexImages/notice-gameStore.png);
+    margin: 80px auto 0;
+    position: relative;
+    .btn-notice {
+      position: absolute;
+      width: 142px;
+      height: 45px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      top: 91px;
+      right: 17px;
+      background-color: #96000c;
+      transition: 0.5s;
+      color: #ffffff;
+      &:hover {
+        background-color: #740009;
+        transition: 0.5s;
+        cursor: pointer;
+        .icon-rightArrow {
+          right: 5px;
+          transition: 0.5s;
+        }
+      }
+      span {
+        margin-left: -20px;
+        font-size: 15px;
+      }
+      .icon-rightArrow {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        transition: 0.5s;
+      }
+    }
+  }
+  .diving-line {
+    width: 1180px;
+    border-bottom: 1px solid #dadada;
+    margin: 80px auto;
+  }
+  .explore-gaming-stystems {
+    width: 1180px;
+    margin: 0 auto;
+    h1 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+    .system-switch {
+      height: 360px;
+      background: url(../images/indexImages/system-switch.png);
+    }
+    .system-2DS {
+      height: 290px;
+      background: url(../images/indexImages/system-2DS.png);
+    }
+    .system-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #484848;
+      margin: 40px 0;
+      .btn-notice {
+        position: relative;
+        width: 190px;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        background-color: #d80011;
+        transition: 0.5s;
+        color: #ffffff;
+        font-weight: 600;
+        &:hover {
+          background-color: #ac000d;
+          transition: 0.5s;
+          cursor: pointer;
+          .icon-rightArrow {
+            right: 5px;
+            transition: 0.5s;
+          }
+        }
+        span {
+          margin-left: -20px;
+          font-size: 15px;
+        }
+        .icon-rightArrow {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .trending-games {
+    width: 1180px;
+    margin: 0 auto;
+    .game-items-container {
+      display: flex;
+      justify-content: space-between;
+      .game-item {
+        width: 271px;
+        box-sizing: border-box;
+        position: relative;
+        .picture-container {
+          width: inherit;
+          height: 153px;
+          &::before {
+            content: "";
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #484848;
+            transition: 0.4s;
+          }
+        }
+        &:hover {
+          .picture-container::before {
+            opacity: 0.2;
+            transition: 0.4s;
+          }
+          cursor: pointer;
+          .game-title {
+            color: #db0011;
+            transition: 0.4s;
+          }
+        }
+        .released-date {
+          color: #484848;
+        }
+        .game-title {
+          font-size: 20px;
+          transition: 0.4s;
+          font-weight: 600;
+          color: #484848;
+        }
+        .game-plat {
+          font-size: 14px;
+          padding: 6px 3px;
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+  }
+  .news {
+    width: 1180px;
+    margin: 0 auto;
+    .news-item-container {
+      display: flex;
+      justify-content: space-between;
+      .news-item {
+        width: 574px;
+        box-sizing: border-box;
+        position: relative;
+        .picture-container {
+          width: inherit;
+          height: 324px;
+          &::before {
+            content: "";
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #484848;
+            transition: 0.4s;
+          }
+        }
+        &:hover {
+          .picture-container::before {
+            opacity: 0.2;
+            transition: 0.4s;
+          }
+          cursor: pointer;
+          .game-title {
+            color: #db0011;
+            transition: 0.4s;
+          }
+        }
+        .released-date {
+          color: #484848;
+        }
+        .game-title {
+          font-size: 20px;
+          transition: 0.4s;
+          font-weight: 600;
+          color: #484848;
+        }
+        .game-plat {
+          font-size: 14px;
+          padding: 6px 3px;
+          border-bottom: 1px solid red;
+        }
+        .news-content {
+          font-size: 16px;
+          font-weight: 300;
+        }
+        .read-more {
+          color: #db188c;
+          font-weight: 600;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .news-box {
+    margin: 80px auto;
+    .read-more {
+      color: #db188c;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .see-all-news-container {
+    margin: 0 auto;
+    width: 300px;
+    .btn-see-all-news {
+      position: relative;
+      width: inherit;
+      height: 45px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin-left: 10px;
+      background-color: #d80011;
+      transition: 0.5s;
+      color: #ffffff;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #ac000d;
+        transition: 0.5s;
+        cursor: pointer;
+        .icon-rightArrow {
+          right: 5px;
+          transition: 0.5s;
+        }
+      }
+      span {
+        margin-left: -50px;
+        font-size: 15px;
+      }
+      .icon-rightArrow {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        transition: 0.5s;
+      }
+    }
+  }
+  .Characters {
+    width: 1180px;
+    margin: 80px auto;
+    .character-container {
+      display: flex;
+      justify-content: space-between;
+      .character-item{
+        width: 271px;
+        box-sizing: border-box;
+        position: relative;
+    
+        .character-img-container {
+          width: inherit;
+          height: 296px;
+          background-size: cover;
+          &::before {
+            content: "";
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #484848;
+            transition: 0.4s;
+          }
+        }
+        &:hover {
+          .character-img-container::before {
+            opacity: 0.2;
+            transition: 0.4s;
+          }
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .main-last-tip{
+    width: 1180px;
+    margin: -30px auto 20px;
+  }
+}
+//footer
+footer{
+  .nav-footer{
+    background-color: #f4f4f4;
+    .nav-container{
+      width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      ul{
+        li{
+          font-size: 12px;
+          margin: 10px 0;
+        }
+        .nav-title{
+          font-size: 16px;
+          font-weight: 900;
+          color: #484848;
+        }
+      }
+    }
+  }
+  .footer-link{
+    background-color: #444343;
+    color: #cdcdcd ;
+    font-size: 12px;
+    padding: 30px;
+    .container{
+      position: relative;
+      margin: 0 auto;
+      width: 700px;
+
+      .links-container{
+        width: 250px;
+        margin: 0 auto;
+      
+        >div{
+          display: flex;
+          margin: 0 auto;
+          justify-content: space-around;
+          margin: 10px ;
+          a{
+            color: #cdcdcd;
+            font-size: 14px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      p{
+        text-align: center;
+      }
+    .icon-ESRB{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    }
+  }
+}
+
+
+
+.backTop{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: 1s;
+  z-index: 3;
+  &:hover{
+    cursor: url(../images/indexImages/火.svg),pointer;
+  }
+}

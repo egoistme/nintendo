@@ -1,0 +1,177 @@
+@keyframes showAnimate {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main .store-title-container {
+  margin-top: -510px;
+  background-image: url(../images/gameStoreImages/secondary-nav-bg.png);
+}
+main .store-title-container .flexBox {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .store-title-container .flexBox ul li {
+  display: inline-block;
+  background-color: #ff7d00;
+  line-height: 40px;
+  height: 40px;
+  margin: 0 -3px;
+}
+main .store-title-container .flexBox ul li:hover {
+  background-color: #fb9100;
+}
+main .store-title-container .flexBox ul li a {
+  margin: 0 10px;
+  font-size: 14px;
+  color: white;
+}
+main .search-input-row .flexBox {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .search-input-row .flexBox .search-input-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .search-input-row .flexBox .search-input-container .sort-by {
+  font-size: 18px;
+  margin-right: 10px;
+}
+main .search-input-row .flexBox .search-input-container .input-wrapper {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #484848;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+}
+main .search-input-row .flexBox .search-input-container .input-wrapper select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+main .content {
+  width: 1440px;
+  margin: 30px auto;
+  display: flex;
+}
+main .content .none {
+  width: 25%;
+}
+main .content .sort-list {
+  width: 20%;
+  min-width: 300px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  position: fixed;
+  transition: 0.5s ease-in-out;
+}
+main .content .sort-list ul.filterList li.item-filter {
+  display: block;
+  border-top: 1px solid #e2e2e2;
+}
+main .content .sort-list ul.filterList li.item-filter .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+main .content .sort-list ul.filterList li.item-filter .title .downArrow {
+  width: 32px;
+  height: 32px;
+  background: url(../images/gameStoreImages/downarrow.svg);
+}
+main .content .sort-list ul.filterList li.item-filter .title .upArrow {
+  background: url(../images/gameStoreImages/uparrow.svg);
+}
+main .content .sort-list ul.filterList li.item-filter .title:hover {
+  cursor: pointer;
+}
+main .content .sort-list ul.filterList li.item-filter .item-content {
+  color: #888888;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+main .content .sort-list ul.filterList li.item-filter .item-content ul li:hover {
+  cursor: pointer;
+  color: #54c0ff;
+}
+main .content .sort-list ul.filterList li.item-filter .item-content-show {
+  height: 120px;
+}
+main .content .game-list {
+  width: 75%;
+}
+main .content .game-list .gameCard-container {
+  display: flex;
+  min-height: 1000px;
+  flex-wrap: wrap;
+}
+main .content .game-list .gameCard-container .gameCard {
+  display: block;
+  width: 153px;
+  margin: 0 0 30px 27px;
+  animation: showAnimate 0.3s ease-in-out 1 forwards;
+}
+main .content .game-list .gameCard-container .gameCard p {
+  margin: 0;
+}
+main .content .game-list .gameCard-container .gameCard:hover {
+  cursor: pointer;
+}
+main .content .game-list .gameCard-container .gameCard:hover .game-title {
+  color: #3aa4ff;
+}
+main .content .game-list .gameCard-container .gameCard .game-title {
+  font-size: 16px;
+  color: #2576bc;
+  margin-top: 25px;
+  font-weight: 600;
+}
+main .content .game-list .gameCard-container .gameCard .game-released-date {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+main .content .game-list .gameCard-container .gameCard .game-price {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+main .content .game-list .gameCard-container .gameCard .game-plat {
+  display: inline-block;
+  border-bottom: 3px solid #e60012;
+  color: #999;
+  font-size: 13px;
+}
+main .content .game-list .load-more {
+  width: 280px;
+  height: 40px;
+  display: block;
+  margin: 50px auto;
+  outline: none;
+  border: none;
+  background-color: #2576bc;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.4s;
+}
+main .content .game-list .load-more:hover {
+  cursor: pointer;
+  background-color: #3aa4ff;
+  transition: 0.4s;
+}

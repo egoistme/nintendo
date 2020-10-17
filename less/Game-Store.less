@@ -1,0 +1,193 @@
+@keyframes showAnimate{
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+main {
+  .store-title-container {
+    margin-top: -510px;
+    background-image: url(../images/gameStoreImages/secondary-nav-bg.png);
+    .flexBox {
+      width: 1440px;
+      margin: 0 auto;
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        li {
+          display: inline-block;
+          background-color: #ff7d00;
+          line-height: 40px;
+          height: 40px;
+          margin: 0 -3px;
+          &:hover {
+            background-color: #fb9100;
+          }
+          a {
+            margin: 0 10px;
+            font-size: 14px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .search-input-row {
+    .flexBox {
+      width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search-input-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .sort-by {
+          font-size: 18px;
+          margin-right: 10px;
+        }
+        .input-wrapper {
+          width: 270px;
+          height: 40px;
+          border: 1px solid #484848;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding: 5px 20px;
+          select {
+            width: 100%;
+            height: 30px;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 1440px;
+    
+    margin: 30px auto;
+    display: flex;
+    .none{
+      width: 25%;
+    }
+    .sort-list {
+      width: 20%;
+      min-width: 300px;
+      padding-right: 100px;
+      box-sizing: border-box;
+      position: fixed;
+      transition: 0.5s ease-in-out;
+      ul.filterList{
+        li.item-filter{
+          display: block;
+          border-top: 1px solid#e2e2e2;
+          .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            .downArrow{
+              width: 32px;
+              height: 32px;
+              background: url(../images/gameStoreImages/downarrow.svg);
+            }
+            .upArrow{
+              background: url(../images/gameStoreImages/uparrow.svg);
+
+            }
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          .item-content{
+            color: #888888;
+            height: 0px;
+            overflow: hidden;
+            transition: 0.2s ease-in-out;
+            ul{
+              li{
+                &:hover{
+                  cursor: pointer;
+                  color: #54c0ff;
+                }
+              }
+            }
+          }
+          .item-content-show{
+            height: 120px;
+          }
+        }
+      }
+    }
+    .game-list {
+      width: 75%;
+      .gameCard-container {
+        display: flex;
+        min-height: 1000px;
+        flex-wrap: wrap;
+        .gameCard {
+          display: block;
+          width: 153px;
+          margin:0 0 30px 27px;
+          animation: showAnimate 0.3s ease-in-out  1 forwards;
+            p{
+                margin: 0;
+            }
+          &:hover {
+              cursor: pointer;
+            .game-title {
+              color: #3aa4ff;
+            }
+          }
+          .game-title {
+            font-size: 16px;
+            color: #2576bc;
+            margin-top: 25px;
+            font-weight: 600;
+          }
+          .game-released-date {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 5px 0;
+          }
+          .game-price{
+              font-weight: 600;
+              margin-bottom: 10px;
+          }
+          .game-plat {
+            display: inline-block;
+            border-bottom: 3px solid #e60012;
+            color: #999;
+            font-size: 13px;
+          }
+        }
+      }
+      .load-more{
+          width: 280px;
+          height: 40px;
+          display: block;
+          margin: 50px auto;
+          outline: none;
+          border: none;
+          background-color: #2576bc;
+          color: #fff;
+          font-size: 16px;
+          transition: 0.4s;
+
+          &:hover{
+              cursor: pointer;
+              background-color: #3aa4ff;
+              transition: 0.4s;
+          }
+      }
+    }
+  }
+}

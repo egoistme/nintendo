@@ -1,0 +1,1167 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input {
+  outline: none;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.d-block {
+  display: block !important;
+}
+@keyframes bg-img-float-left {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes bg-img-float-right {
+  0% {
+    top: 80px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+header {
+  background-color: #fff;
+}
+header .wrapper {
+  height: 42px;
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+header .wrapper .logo-Nintendo {
+  display: block;
+  width: 165px;
+  height: 110px;
+  background-color: #e60012;
+  border-radius: 0 0 15px 15px;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  left: 0;
+  transition: ease-in-out 0.2s;
+}
+header .wrapper .logo-Nintendo:hover {
+  top: 0;
+  transition: ease-in-out 0.3s;
+}
+header .wrapper .searchBox {
+  width: 400px;
+  height: inherit;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #a7a7a7;
+  padding: 4px 20px;
+  position: relative;
+}
+header .wrapper .searchBox input {
+  width: 85%;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+}
+header .wrapper .searchBox input::placeholder {
+  font-size: 15px;
+}
+header .wrapper .searchBox .icon-search {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+header .wrapper .searchBox .icon-search:hover {
+  cursor: pointer;
+}
+header .wrapper .regionChange {
+  width: 150px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin: 0 10px;
+}
+header .wrapper .login-reg {
+  display: block;
+  width: 150px;
+  height: inherit;
+  background-color: #e60012;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2px;
+}
+header .wrapper .login-reg:hover {
+  background-color: #ce181e;
+}
+header .wrapper .login-reg img {
+  margin: 5px;
+  border-right: 1px solid white;
+  padding-right: 5px;
+}
+header .wrapper .login-reg span {
+  font-size: 13px;
+  color: white;
+}
+header .wrapper .user-signIn {
+  width: 150px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+}
+header .wrapper .user-signIn .username {
+  margin-right: 5px;
+}
+header .wrapper .user-signIn .username:hover {
+  color: #5566b4;
+  text-decoration: underline;
+}
+header .nav-main {
+  height: 30px;
+  background: linear-gradient(#f5f5f5, #dadada);
+  margin-top: 5px;
+}
+header .nav-main ul {
+  width: 1280px;
+  margin: 0 auto;
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+header .nav-main ul li {
+  display: inline-block;
+  height: inherit;
+  line-height: 30px;
+  width: 150px;
+}
+header .nav-main ul li:hover {
+  cursor: pointer;
+}
+header .nav-main ul li:nth-child(1):hover {
+  background-color: #ffffff;
+}
+header .nav-main ul li:nth-child(2):hover {
+  background-color: #ce181e;
+  color: white;
+}
+header .nav-main ul li:nth-child(3):hover {
+  background-color: #ff7d00;
+  color: white;
+}
+header .nav-main ul li:nth-child(4):hover {
+  background-color: #ffffff;
+}
+header .nav-main ul li:nth-child(5):hover {
+  color: white;
+  background-color: #ff3f3f;
+}
+header .nav-main ul li:nth-child(6):hover {
+  background-color: #00bff3;
+  color: white;
+}
+header .nav-main ul li:nth-child(7):hover {
+  background-color: #ffffff;
+}
+main .banner {
+  height: 700px;
+  overflow: hidden;
+}
+main .banner > img {
+  min-width: 1900px;
+  position: absolute;
+  z-index: -1;
+}
+main .banner ul.nav-second-container {
+  width: 100%;
+  height: 510px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .banner ul.nav-second-container a {
+  display: block;
+}
+main .banner ul.nav-second-container li.nav-second {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container {
+  width: 960px;
+  height: inherit;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox {
+  width: 225px;
+  height: 460px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems {
+  width: 100%;
+  height: 335px;
+  border-radius: 15px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 335px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .bg-layer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: none;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover {
+  cursor: pointer;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover::before {
+  filter: blur(5px);
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .bg-layer {
+  display: block;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .link-title {
+  font-size: 26px;
+  margin-top: 40%;
+  transition: ease-in-out 0.3s;
+  color: white;
+  z-index: 1;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .link-title-bottom {
+  bottom: 12%;
+  color: white;
+  font-size: 15px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .link-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 8%;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .link-title-bottom {
+  font-size: 14px;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+  bottom: 5%;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-linkBtn {
+  width: 100%;
+  height: 95px;
+  border-radius: 15px;
+  background-color: orange;
+  margin-top: 15px;
+  border: 3px solid orange;
+  font-size: 30px;
+  box-sizing: border-box;
+  transition: ease-in-out 0.3s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-linkBtn:hover {
+  cursor: pointer;
+  background-color: rgba(226, 11, 11);
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox {
+  width: 735px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 460px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems {
+  width: 225px;
+  height: 215px;
+  border-radius: 15px;
+  margin-left: 15px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 215px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems .bg-layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: none;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover {
+  cursor: pointer;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover::before {
+  filter: blur(5px);
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover .bg-layer {
+  display: block;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover .link-title {
+  font-size: 19px;
+  margin-top: 40%;
+  transition: ease-in-out 0.3s;
+  color: white;
+  z-index: 1;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems .link-title {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 8%;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container > img {
+  position: absolute;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg1 {
+  left: -300px;
+  animation: bg-img-float-left 3s ease-in-out infinite;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg2 {
+  left: -260px;
+  bottom: -90px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg3 {
+  right: -260px;
+  top: 80px;
+  animation: bg-img-float-right 3s ease-in-out 1s infinite;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg4 {
+  right: 0px;
+  bottom: 200px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg5 {
+  right: -360px;
+  bottom: 90px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg6 {
+  right: -240px;
+  bottom: 90px;
+}
+main .banner ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg7 {
+  right: -120px;
+  bottom: 90px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) {
+  display: none;
+  background: linear-gradient(#fff 25%, #eeee 100%);
+  background-color: #fff;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-leftItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-leftItems::before {
+  background: url(../images/indexImages/home.jpg) center 60px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/system.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/onlineservice.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/games.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/lite.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/accessories.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/labo.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) {
+  display: none;
+  background-color: #ce181e;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-leftItems {
+  border: 3px solid #ee0007;
+  color: #fff;
+  background-color: #ee0007;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-leftItems::before {
+  background: url(../images/indexImages/3ds.png) center 100px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems {
+  border: 3px solid #ee0007;
+  color: #fff;
+  background-color: #ee0007;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/overview.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/games.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/features.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/built-in-software.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/faq.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/labo.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) {
+  display: none;
+  background-color: #ff7d00;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-leftItems {
+  border: 3px solid #f7a324;
+  color: #fff;
+  background-color: #f7a327;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-leftItems::before {
+  background: url(../images/indexImages/game-store.png) center 100px;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems {
+  border: 3px solid #f7a324;
+  color: #fff;
+  background-color: #f7a324;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/switch-games.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/games.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/nintendo-3ds-games.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/mobile-games.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/sales-and-offers.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/star.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) {
+  display: none;
+  background: url(../images/indexImages/bg-amiibo.png);
+  background-color: #fff;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-leftItems {
+  border: 3px solid #0a7cc0;
+  color: #fff;
+  background-color: #0a7cc0;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-leftItems::before {
+  background: url(../images/indexImages/plant-amiibo.png) center 100px;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems {
+  color: #fff;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(1) {
+  border: 3px solid #e6001e;
+  background-color: #e6001e;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/what-is-amiibo.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(2) {
+  border: 3px solid #0076dc;
+  background-color: #0076dc;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/lineup.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(3) {
+  border: 3px solid #677f11;
+  background-color: #677f11;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/games\(2\).png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(4) {
+  border: 3px solid #158571;
+  background-color: #158571;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/compatibility.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(5) {
+  border: 3px solid #e11d78;
+  background-color: #e11d78;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/faq.png);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) {
+  display: none;
+  background-color: #ff3f3f;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-leftItems {
+  border: 3px solid #fa6a6a;
+  color: #fff;
+  background-color: #fa6a6a;
+  height: 445px !important;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-leftItems::before {
+  background: url(../images/indexImages/play-nintendo.jpg) center 100px;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems {
+  border: 3px solid #fa6a6a;
+  color: #fff;
+  background-color: #fa6a6a;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/donkey-kong-diddy-kong.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/lakitu.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/peach.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/baby-mario-and-yoshi.jpg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) {
+  display: none;
+  background-color: #00bff3;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-leftItems {
+  border: 3px solid #55d4f7;
+  color: #fff;
+  background-color: #55d4f7;
+  height: 445px !important;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-leftItems::before {
+  background: url(../images/indexImages/mario.jpg) center 100px;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems {
+  border: 3px solid #55d4f7;
+  color: #fff;
+  background-color: #55d4f7;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems::before {
+  background: no-repeat center center;
+  background-size: 100px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/icon-joy-con.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/threeds-support.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/support-forums.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/digital-purchases.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/internet-connections.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/set-up-repair.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) {
+  display: none;
+  background-color: #fa6a6a;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-leftItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+  height: 445px !important;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-leftItems::before {
+  background: url(../images/indexImages/my-nintendo-mii.jpg) center 100px;
+  background-size: 225px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems::before {
+  background: no-repeat center center;
+  background-size: 130px;
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/logo-my-nintendo.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/rewards.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/missions.svg);
+}
+main .banner ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/about-points.jpg);
+}
+main .info-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+main .info-container .standard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 640px;
+  margin: 0 auto;
+}
+main .info-container .standard span {
+  font-size: 26px;
+}
+main .info-container .standard button {
+  width: 100px;
+  height: 40px;
+  background-color: #e70012;
+  color: white;
+  border-radius: 5px;
+  transition: 0.1s;
+  border: none;
+}
+main .info-container .standard button:hover {
+  cursor: pointer;
+  background-color: #ac000d;
+  transition: 0.1s;
+}
+main .info-container .standard .infoboard {
+  width: 200px;
+}
+main .info-container .standard .infoboard .info {
+  font-size: 12px;
+}
+main .info-container .standard .infoboard hr {
+  border: 1px solid;
+}
+main .info-container > hr {
+  margin: 60px;
+  width: 80%;
+}
+main .carousel-container .carousel-window {
+  width: 100%;
+  overflow: hidden;
+}
+main .carousel-container .carousel-window ul.carousel-content {
+  width: 4150px;
+  display: flex;
+  justify-content: space-around;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item {
+  margin: 50px auto;
+  display: block;
+  width: 280px;
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item::before {
+  content: "";
+  opacity: 0;
+  width: 280px;
+  height: 263px;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  background-color: transparent;
+  border: 6px dashed #555454;
+  z-index: -1;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item:hover {
+  cursor: pointer;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item:hover::before {
+  opacity: 1;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item:hover .game-title {
+  color: #db0011;
+  transition: 0.4s;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item .game-title {
+  padding: 0 6px;
+  font-size: 22px;
+  text-align: center;
+  transition: 0.4s;
+}
+main .carousel-container .carousel-window ul.carousel-content li.carousel-item .game-plat {
+  font-size: 14px;
+  padding: 6px 3px;
+  border-bottom: 1px solid red;
+}
+main .carousel-container .carousel-window .traceline-container {
+  width: 60%;
+  height: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #444444;
+}
+main .carousel-container .carousel-window .traceline-container .traceline {
+  width: 46%;
+  height: 10px;
+  background-color: #333333;
+  border-radius: 10px;
+}
+main .notice-container {
+  width: 1180px;
+  height: 227px;
+  background: url(../images/indexImages/notice-gameStore.png);
+  margin: 80px auto 0;
+  position: relative;
+}
+main .notice-container .btn-notice {
+  position: absolute;
+  width: 142px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  top: 91px;
+  right: 17px;
+  background-color: #96000c;
+  transition: 0.5s;
+  color: #ffffff;
+}
+main .notice-container .btn-notice:hover {
+  background-color: #740009;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .notice-container .btn-notice:hover .icon-rightArrow {
+  right: 5px;
+  transition: 0.5s;
+}
+main .notice-container .btn-notice span {
+  margin-left: -20px;
+  font-size: 15px;
+}
+main .notice-container .btn-notice .icon-rightArrow {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  transition: 0.5s;
+}
+main .diving-line {
+  width: 1180px;
+  border-bottom: 1px solid #dadada;
+  margin: 80px auto;
+}
+main .explore-gaming-stystems {
+  width: 1180px;
+  margin: 0 auto;
+}
+main .explore-gaming-stystems h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+main .explore-gaming-stystems .system-switch {
+  height: 360px;
+  background: url(../images/indexImages/system-switch.png);
+}
+main .explore-gaming-stystems .system-2DS {
+  height: 290px;
+  background: url(../images/indexImages/system-2DS.png);
+}
+main .explore-gaming-stystems .system-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #484848;
+  margin: 40px 0;
+}
+main .explore-gaming-stystems .system-title .btn-notice {
+  position: relative;
+  width: 190px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  background-color: #d80011;
+  transition: 0.5s;
+  color: #ffffff;
+  font-weight: 600;
+}
+main .explore-gaming-stystems .system-title .btn-notice:hover {
+  background-color: #ac000d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .explore-gaming-stystems .system-title .btn-notice:hover .icon-rightArrow {
+  right: 5px;
+  transition: 0.5s;
+}
+main .explore-gaming-stystems .system-title .btn-notice span {
+  margin-left: -20px;
+  font-size: 15px;
+}
+main .explore-gaming-stystems .system-title .btn-notice .icon-rightArrow {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  transition: 0.5s;
+}
+main .trending-games {
+  width: 1180px;
+  margin: 0 auto;
+}
+main .trending-games .game-items-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .trending-games .game-items-container .game-item {
+  width: 271px;
+  box-sizing: border-box;
+  position: relative;
+}
+main .trending-games .game-items-container .game-item .picture-container {
+  width: inherit;
+  height: 153px;
+}
+main .trending-games .game-items-container .game-item .picture-container::before {
+  content: "";
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  transition: 0.4s;
+}
+main .trending-games .game-items-container .game-item:hover {
+  cursor: pointer;
+}
+main .trending-games .game-items-container .game-item:hover .picture-container::before {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+main .trending-games .game-items-container .game-item:hover .game-title {
+  color: #db0011;
+  transition: 0.4s;
+}
+main .trending-games .game-items-container .game-item .released-date {
+  color: #484848;
+}
+main .trending-games .game-items-container .game-item .game-title {
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: 600;
+  color: #484848;
+}
+main .trending-games .game-items-container .game-item .game-plat {
+  font-size: 14px;
+  padding: 6px 3px;
+  border-bottom: 1px solid red;
+}
+main .news {
+  width: 1180px;
+  margin: 0 auto;
+}
+main .news .news-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .news .news-item-container .news-item {
+  width: 574px;
+  box-sizing: border-box;
+  position: relative;
+}
+main .news .news-item-container .news-item .picture-container {
+  width: inherit;
+  height: 324px;
+}
+main .news .news-item-container .news-item .picture-container::before {
+  content: "";
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  transition: 0.4s;
+}
+main .news .news-item-container .news-item:hover {
+  cursor: pointer;
+}
+main .news .news-item-container .news-item:hover .picture-container::before {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+main .news .news-item-container .news-item:hover .game-title {
+  color: #db0011;
+  transition: 0.4s;
+}
+main .news .news-item-container .news-item .released-date {
+  color: #484848;
+}
+main .news .news-item-container .news-item .game-title {
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: 600;
+  color: #484848;
+}
+main .news .news-item-container .news-item .game-plat {
+  font-size: 14px;
+  padding: 6px 3px;
+  border-bottom: 1px solid red;
+}
+main .news .news-item-container .news-item .news-content {
+  font-size: 16px;
+  font-weight: 300;
+}
+main .news .news-item-container .news-item .read-more {
+  color: #db188c;
+  font-weight: 600;
+}
+main .news .news-item-container .news-item .read-more:hover {
+  text-decoration: underline;
+}
+main .news-box {
+  margin: 80px auto;
+}
+main .news-box .read-more {
+  color: #db188c;
+  font-weight: 600;
+}
+main .news-box .read-more:hover {
+  text-decoration: underline;
+}
+main .see-all-news-container {
+  margin: 0 auto;
+  width: 300px;
+}
+main .see-all-news-container .btn-see-all-news {
+  position: relative;
+  width: inherit;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  background-color: #d80011;
+  transition: 0.5s;
+  color: #ffffff;
+  font-weight: 600;
+}
+main .see-all-news-container .btn-see-all-news:hover {
+  background-color: #ac000d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .see-all-news-container .btn-see-all-news:hover .icon-rightArrow {
+  right: 5px;
+  transition: 0.5s;
+}
+main .see-all-news-container .btn-see-all-news span {
+  margin-left: -50px;
+  font-size: 15px;
+}
+main .see-all-news-container .btn-see-all-news .icon-rightArrow {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  transition: 0.5s;
+}
+main .Characters {
+  width: 1180px;
+  margin: 80px auto;
+}
+main .Characters .character-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .Characters .character-container .character-item {
+  width: 271px;
+  box-sizing: border-box;
+  position: relative;
+}
+main .Characters .character-container .character-item .character-img-container {
+  width: inherit;
+  height: 296px;
+  background-size: cover;
+}
+main .Characters .character-container .character-item .character-img-container::before {
+  content: "";
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  transition: 0.4s;
+}
+main .Characters .character-container .character-item:hover {
+  cursor: pointer;
+}
+main .Characters .character-container .character-item:hover .character-img-container::before {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+main .main-last-tip {
+  width: 1180px;
+  margin: -30px auto 20px;
+}
+footer .nav-footer {
+  background-color: #f4f4f4;
+}
+footer .nav-footer .nav-container {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .nav-footer .nav-container ul li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+footer .nav-footer .nav-container ul .nav-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: #484848;
+}
+footer .footer-link {
+  background-color: #444343;
+  color: #cdcdcd;
+  font-size: 12px;
+  padding: 30px;
+}
+footer .footer-link .container {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+}
+footer .footer-link .container .links-container {
+  width: 250px;
+  margin: 0 auto;
+}
+footer .footer-link .container .links-container > div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin: 10px ;
+}
+footer .footer-link .container .links-container > div a {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+footer .footer-link .container .links-container > div a:hover {
+  text-decoration: underline;
+}
+footer .footer-link .container p {
+  text-align: center;
+}
+footer .footer-link .container .icon-ESRB {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.backTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: 1s;
+  z-index: 3;
+}
+.backTop:hover {
+  cursor: url(../images/indexImages/火.svg), pointer;
+}

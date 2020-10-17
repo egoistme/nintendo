@@ -1,0 +1,186 @@
+
+main{
+    .chooseCard-container{
+        .chooseCard-regWay{
+            margin:0 auto;
+            width: 960px;
+            height: 230px;
+            background-color: white;
+            p{
+                font-size: 14px;
+                text-align: center;
+                padding: 25px;
+            }
+            .chooseBtn-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .chooseBtn{
+                    width: 45%;
+                    margin: 5px;
+                    height: 40px;
+                    border-radius: 20px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    line-height: 40px;
+                    position: relative;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .icon{
+                        position: absolute;
+                        top: 5px;
+                        left: 30px;
+                        
+                    }
+                    &:nth-child(1){
+                        background-color: #1877f2;
+                        &:hover{
+                            background-color:#5da0f6;
+                        }
+                    }
+                    &:nth-child(2){
+                        background-color: #ffffff;
+                        border: 1px solid #bcbcbc;
+                        color: #000;
+                        &:hover{
+                            color:#888888;
+                        }
+                    }
+                    &:nth-child(3){
+                        background-color: #1da1f2;
+                        &:hover{
+                            background-color:#5da0f6;
+                        }
+                    }
+                    &:nth-child(4){
+                        background-color: #000000;
+                        &:hover{
+                            background-color: #4c4c4c;
+                        }
+                    }
+                }
+            }
+        }
+        .regForm{
+            width: 960px;
+            box-sizing: border-box;
+            border: 10px white solid;
+            border-radius: 5px;
+            margin: 50px auto;
+            p{
+                font-size: 13px;
+                text-align: center;
+                padding: 40px;
+            }
+            .row{
+                width: 70%;
+                margin: 0 auto 30px;
+                display: flex;
+                justify-content: space-between;
+                .inputLabel{
+                    padding-left: 10px;
+                    border-left: 6px solid black;
+                    font-size: 13px;
+                    line-height: 40px;
+                }
+                .input-container{
+                    box-sizing: border-box;
+                    .input-wrapper{
+                        background-color: #ffffff;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        width: 410px;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        input{
+                            outline: none;
+                            border: none;
+                            height: 25px;
+                            background-color: inherit ; 
+                            
+                            &::placeholder{
+                                color: #bbbbbb;
+                            }
+                        }
+                        select{
+                            width: inherit;
+                            border: none;
+                            outline: none;
+                            height: 25px;
+                            background-color: inherit;
+                            option{
+                                height: 25px;
+                            }
+                        }
+                    }
+                    .wrongInput-wrapper{
+                        border: 2px solid #d90b1b;
+                        padding-left: 8px;
+                        background-color: #ffe4e4; 
+                    }
+                    .right-wrapper{
+                        border: 2px solid #16d877;
+                        padding-left: 8px;
+                        background-color: #e3fcf1; 
+
+                    }
+                    .explanation{
+                        font-size: 12px;
+                    }
+                }
+
+            }
+            .divline{
+                border-bottom: 1px solid #aaaaaa;
+                padding-top: 30px;
+            }
+            .check-container{
+                width: 70%;
+                width: 70%;
+                margin: 0 auto 30px;
+                display: flex;
+                p{
+                    padding: 0;
+                    text-align: left;
+                    margin: 2px;
+                    font-size: 12px;
+                }
+            }
+                button{
+                    display: block;
+                    margin: 50px auto;
+                    width: 180px;
+                    height: 40px;
+                    border-radius: 20px;
+                    outline: none;
+                    border: none;
+                    background-color: #bbbbbb;
+                    color: #ffffff;
+                }
+                .regBtn{
+                    display: block;
+                    margin: 50px auto;
+                    width: 180px;
+                    height: 40px;
+                    border-radius: 20px;
+                    outline: none;
+                    border: none;
+                    background-color: #e60012;
+                    color: #ffffff;
+                    &:hover{
+                        background-color: #ed4c59;
+                        cursor: pointer;
+                    }
+                }
+            
+        }
+    }
+}
+footer{
+    position: relative !important;
+}

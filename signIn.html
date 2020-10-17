@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signInAndReg.css" type="text/css">
+    <link rel="stylesheet" href="css/signIn.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="INDEX.html">
+            <div class="logo"></div>
+            <span>Nintendo Account</span>
+        </a>
+    </header>
+    <main>
+        <h1>Nintendo Account</h1>
+        <div class="signIn-card">
+            <!-- hasAccount -->
+            <div class="input-container">
+                <input type="text" placeholder="Nintendo@game.com">
+            </div>
+            <div class="input-container ">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="row">
+                <div><i></i><span>忘记密码</span></div>
+                <button onclick="signIn()">登录</button>
+            </div>
+            <div class="otherWay">
+                <p>使用其他账号登录</p>
+                <div class="chooseBtn-container">
+                    <div class="chooseBtn">
+                        <i class="icon icon-facebook"><img src="images/SignInAndRegImages/facebook.png" alt=""
+                                width="20px"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Google"><img src="images/SignInAndRegImages/google.png" alt=""
+                                width="20px"></i>
+                        <span>Google</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Twitter"><img src="images/SignInAndRegImages/twitter.png" alt=""
+                                width="20px"></i>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Apple"><img src="images/SignInAndRegImages/apple.png" alt=""
+                                width="20px"></i>
+                        <span>使用Apple</span>
+                    </div>
+                </div>
+            </div>
+            <p>还没有账号？</p>
+            <a href="reg.html">创建新账号</a>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Official Nintendo Website</a>
+            <a href="#" class="chinese">任天堂网站</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Nintendo Account User Agreement</a>
+            <a href="#" class="chinese">使用条款</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Nintendo Privacy Policy</a>
+            <a href="#" class="chinese">隐私政策</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Help</a>
+            <a href="#" class="chinese">帮助</a>
+        </div>
+        <div class="language-selector">
+            <span>简体中文</span>
+            <i class="upArrow"></i>
+            <div class="languagesChooseBox">
+                <p id="english">English</p>
+                <p id="jianti">简体中文</p>
+                <p>繁體中文</p>
+                <p>français</p>
+                <p>한국어</p>
+                <p>セーター</p>
+                <p>deutschen</p>
+                <p>русский язык</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mock-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/server.js"></script>
+
+    <script>
+        let users = getlocalStorage('users')
+        const inputs = document.querySelectorAll(".input-container input");
+        if (users != '') {
+            for (let item of inputs) {
+                item.parentElement.classList.add("hasAccount");
+            }
+            inputs[0].value = users[users.length - 1].mail;
+            inputs[1].value = users[users.length - 1].password;
+        }
+        function signIn() {
+            const user = {
+                mail:inputs[0].value,
+                password:inputs[1].value
+            }
+            ajax({
+                type: "post",
+                data: JSON.stringify(user),
+                url: "users/signInUser",
+                success(msg) {
+                    if(msg){
+                        console.log(msg)
+                        alert("登录成功");
+                        window.location.href=("gameDetail.html");
+                    }else{
+                        alert("用户名或密码错误！")
+                    }
+                },
+            });
+        }
+    </script>
+</body>
+
+</html>

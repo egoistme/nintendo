@@ -1,0 +1,293 @@
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: none;
+    }
+}
+header {
+  .logoRow {
+    height: 3.8462rem;
+    background-color: #e60012;
+    padding: 0 1.1922rem;
+    .logo {
+      height: 1.5385rem;
+      width: 6.1538rem;
+      background: url(../images/indexImages/logo-nintendo.svg) center center;
+      background-size: cover;
+    }
+    .login-reg {
+        display: block;
+        width: 13.8462rem;
+        height: inherit;
+        background-color: #e60012;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
+     
+        &:hover {
+          background-color: #ce181e;
+        }
+        img {
+          margin: 0.3846rem;
+          border-right: 0.0769rem solid white;
+          padding-right: 0.3846rem;
+        }
+        span {
+          font-size: 1rem;
+          color: white;
+        }
+      }
+  }
+  .navRow{
+      height: 2.3077rem;
+      background:linear-gradient(#f5f5f5, #dadada);
+
+        a{
+            line-height: 2.3077rem;
+        }    
+  }
+
+  @media screen and (width:414px) {
+    .kirbybg1{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px 20px;
+    }
+      .kirbybg2{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px -80px;
+    }
+      .kirbybg3{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px -181px;
+    }
+  }
+  @media screen and (width:375px){
+    .kirbybg1{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px 10px;
+    }
+      .kirbybg2{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px -80px;
+    }
+      .kirbybg3{
+        background: url(../images/indexImages/kirby-fg.png) no-repeat 150px -170px;
+    }
+  }
+}
+main{
+  .backTop{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    transition: 1s;
+  }
+
+.banner{
+        .info-container {
+            width: 100%;
+            height: 7.6923rem;
+            margin-top: 3.8462rem;
+            .standard {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin: 0 auto;
+              span {
+                font-size: 2rem;
+              }
+              button {
+                width: 7.6923rem;
+                height: 3.0769rem;
+                background-color: #e70012;
+                color: white;
+                border-radius: 0.3846rem;
+                transition: 0.1s;
+                border: none;
+              }
+            }
+          }
+    }
+.carousel-container {
+    .carousel-window {
+      width: 100%;
+      overflow: hidden;
+
+      ul.carousel-content {
+        width: 4150px;
+        display: flex;
+        justify-content: space-around;
+
+        li.carousel-item {
+          margin: 30px auto;
+          display: block;
+          width: 280px;
+          padding: 6px;
+          text-align: center;
+          box-sizing: border-box;
+          position: relative;
+      
+       
+          .game-title {
+            padding: 0 6px;
+            font-size: 22px;
+            text-align: center;
+            transition: 0.4s;
+          }
+          .game-plat {
+            font-size: 14px;
+            padding: 6px 3px;
+            border-bottom: 1px solid red;
+          }
+        }
+      }
+
+    }
+  }
+.system-title {
+          font-size: 1.3846rem;
+          font-weight: 600;
+          color: #484848;
+          .btn-notice {
+            position: relative;
+            width: 13.8462rem;
+            height: 3.4615rem;
+            border-radius: 0.3846rem;
+            border: none;
+            outline: none;
+            background-color: #d80011;
+            transition: 0.5s;
+            color: #ffffff;
+            font-weight: 600;
+            &:hover {
+              background-color: #ac000d;
+              transition: 0.5s;
+              cursor: pointer;
+              .icon-rightArrow {
+                right: 0.3846rem;
+                transition: 0.5s;
+              }
+            }
+            span {
+              margin-left: -20.0005px;
+              font-size: 1.1538rem;
+            }
+            .icon-rightArrow {
+              position: absolute;
+              top: 0.6154rem;
+              right: 0.7692rem;
+              transition: 0.5s;
+            }
+          }
+        }
+
+      
+.media-body{
+        text-overflow: ellipsis;
+    }
+.news {
+
+.news-item-container {
+   
+          .news-item {
+            width:100%;
+            box-sizing: border-box;
+            position: relative;
+  
+            .released-date {
+              color: #484848;
+            }
+            .game-title {
+              font-size: 20px;
+              transition: 0.4s;
+              font-weight: 600;
+              color: #484848;
+            }
+            .game-plat {
+              font-size: 14px;
+              padding: 6px 3px;
+              border-bottom: 1px solid red;
+            }
+            .news-content {
+              font-size: 16px;
+              font-weight: 300;
+            }
+            .read-more {
+              color: #db188c;
+              font-weight: 600;
+            }
+          }
+}
+    }    }
+
+footer{
+    .nav-footer{
+      background-color: #f4f4f4;
+      .nav-container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        ul{
+          li{
+              text-align: center;
+            font-size: 0.9231rem;
+          }
+          .nav-title{
+            font-size: 1.0769rem;
+            font-weight: 900;
+            color: #484848;
+          }
+        }
+      }
+    }
+    .footer-link{
+      background-color: #444343;
+      color: #cdcdcd ;
+      font-size: 12px;
+      padding: 2.3077rem;
+      .container{
+        position: relative;
+        margin: 0 auto;
+    
+  
+        .links-container{
+          width: 19.2308rem;
+          margin: 0 auto;
+        
+          >div{
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-around;
+            margin: 0.7692rem ;
+            a{
+              color: #cdcdcd;
+              font-size: 1.0769rem;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        p{
+          text-align: center;
+        }
+      .icon-ESRB{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      }
+    }
+  }

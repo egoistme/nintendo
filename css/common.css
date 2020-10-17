@@ -1,0 +1,747 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input {
+  outline: none;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.d-block {
+  display: block !important;
+}
+@keyframes bg-img-float-left {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes bg-img-float-right {
+  0% {
+    top: 80px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+header .wrapper {
+  height: 42px;
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+header .wrapper .logo-Nintendo {
+  display: block;
+  width: 165px;
+  height: 110px;
+  background-color: #e60012;
+  border-radius: 0 0 15px 15px;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  position: absolute;
+  z-index: 9;
+  top: -25px;
+  left: 0;
+  transition: ease-in-out 0.2s;
+}
+header .wrapper .logo-Nintendo:hover {
+  top: 0;
+  transition: ease-in-out 0.3s;
+}
+header .wrapper .searchBox {
+  width: 400px;
+  height: inherit;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #a7a7a7;
+  padding: 4px 20px;
+  position: relative;
+}
+header .wrapper .searchBox input {
+  width: 85%;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+}
+header .wrapper .searchBox input::placeholder {
+  font-size: 15px;
+}
+header .wrapper .searchBox .icon-search {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+header .wrapper .searchBox .icon-search:hover {
+  cursor: pointer;
+}
+header .wrapper .regionChange {
+  width: 150px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin: 0 10px;
+}
+header .wrapper .login-reg {
+  display: block;
+  width: 150px;
+  height: inherit;
+  background-color: #e60012;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2px;
+}
+header .wrapper .login-reg:hover {
+  background-color: #ce181e;
+}
+header .wrapper .login-reg img {
+  margin: 5px;
+  border-right: 1px solid white;
+  padding-right: 5px;
+}
+header .wrapper .login-reg span {
+  font-size: 13px;
+  color: white;
+}
+header .wrapper .user-signIn {
+  width: 150px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+}
+header .wrapper .user-signIn .username {
+  margin-right: 5px;
+}
+header .wrapper .user-signIn .username:hover {
+  color: #5566b4;
+  text-decoration: underline;
+}
+header .nav-main {
+  height: 30px;
+  background: linear-gradient(#f5f5f5, #dadada);
+  margin-top: 5px;
+}
+header .nav-main ul {
+  width: 1280px;
+  margin: 0 auto;
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+header .nav-main ul li {
+  display: inline-block;
+  height: inherit;
+  line-height: 30px;
+  width: 150px;
+}
+header .nav-main ul li:hover {
+  cursor: pointer;
+}
+header .nav-main ul li:nth-child(1):hover {
+  background-color: #ffffff;
+}
+header .nav-main ul li:nth-child(2):hover {
+  background-color: #ce181e;
+  color: white;
+}
+header .nav-main ul li:nth-child(3):hover {
+  background-color: #ff7d00;
+  color: white;
+}
+header .nav-main ul li:nth-child(4):hover {
+  background-color: #ffffff;
+}
+header .nav-main ul li:nth-child(5):hover {
+  color: white;
+  background-color: #ff3f3f;
+}
+header .nav-main ul li:nth-child(6):hover {
+  background-color: #00bff3;
+  color: white;
+}
+header .nav-main ul li:nth-child(7):hover {
+  background-color: #ffffff;
+}
+main ul.nav-second-container {
+  width: 100%;
+  height: 510px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main ul.nav-second-container a {
+  display: block;
+}
+main ul.nav-second-container li.nav-second {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container {
+  width: 960px;
+  height: inherit;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox {
+  width: 225px;
+  height: 460px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems {
+  width: 100%;
+  height: 335px;
+  border-radius: 15px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 335px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .bg-layer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: none;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover {
+  cursor: pointer;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover::before {
+  filter: blur(5px);
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .bg-layer {
+  display: block;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .link-title {
+  font-size: 26px;
+  margin-top: 40%;
+  transition: ease-in-out 0.3s;
+  color: white;
+  z-index: 1;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems:hover .link-title-bottom {
+  bottom: 12%;
+  color: white;
+  font-size: 15px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .link-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 8%;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-leftItems .link-title-bottom {
+  font-size: 14px;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+  bottom: 5%;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-linkBtn {
+  width: 100%;
+  height: 95px;
+  border-radius: 15px;
+  background-color: orange;
+  margin-top: 15px;
+  border: 3px solid orange;
+  font-size: 30px;
+  box-sizing: border-box;
+  transition: ease-in-out 0.3s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-leftBox .nav-second-linkBtn:hover {
+  cursor: pointer;
+  background-color: rgba(226, 11, 11);
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox {
+  width: 735px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 460px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems {
+  width: 225px;
+  height: 215px;
+  border-radius: 15px;
+  margin-left: 15px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 215px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems .bg-layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: none;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover {
+  cursor: pointer;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover::before {
+  filter: blur(5px);
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover .bg-layer {
+  display: block;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems:hover .link-title {
+  font-size: 19px;
+  margin-top: 40%;
+  transition: ease-in-out 0.3s;
+  color: white;
+  z-index: 1;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .nav-second-rightBox .nav-second-rightItems .link-title {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 8%;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  width: inherit;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container > img {
+  position: absolute;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg1 {
+  left: -300px;
+  animation: bg-img-float-left 3s ease-in-out infinite;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg2 {
+  left: -260px;
+  bottom: -90px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg3 {
+  right: -260px;
+  top: 80px;
+  animation: bg-img-float-right 3s ease-in-out 1s infinite;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg4 {
+  right: 0px;
+  bottom: 200px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg5 {
+  right: -360px;
+  bottom: 90px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg6 {
+  right: -240px;
+  bottom: 90px;
+}
+main ul.nav-second-container li.nav-second .nav-second-items-container .floatBgImg7 {
+  right: -120px;
+  bottom: 90px;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) {
+  display: none;
+  background: linear-gradient(#fff 25%, #eeee 100%);
+  background-color: #fff;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-leftItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-leftItems::before {
+  background: url(../images/indexImages/home.jpg) center 60px;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/system.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/onlineservice.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/games.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/lite.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/accessories.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(1) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/labo.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) {
+  display: none;
+  background-color: #ce181e;
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-leftItems {
+  border: 3px solid #ee0007;
+  color: #fff;
+  background-color: #ee0007;
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-leftItems::before {
+  background: url(../images/indexImages/3ds.png) center 100px;
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems {
+  border: 3px solid #ee0007;
+  color: #fff;
+  background-color: #ee0007;
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/overview.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/games.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/features.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/built-in-software.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/faq.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(2) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/labo.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) {
+  display: none;
+  background-color: #ff7d00;
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-leftItems {
+  border: 3px solid #f7a324;
+  color: #fff;
+  background-color: #f7a327;
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-leftItems::before {
+  background: url(../images/indexImages/game-store.png) center 100px;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems {
+  border: 3px solid #f7a324;
+  color: #fff;
+  background-color: #f7a324;
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/switch-games.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/games.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/nintendo-3ds-games.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/mobile-games.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/sales-and-offers.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(3) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/star.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(4) {
+  display: none;
+  background: url(../images/indexImages/bg-amiibo.png);
+  background-color: #fff;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-leftItems {
+  border: 3px solid #0a7cc0;
+  color: #fff;
+  background-color: #0a7cc0;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-leftItems::before {
+  background: url(../images/indexImages/plant-amiibo.png) center 100px;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems {
+  color: #fff;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(1) {
+  border: 3px solid #e6001e;
+  background-color: #e6001e;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/what-is-amiibo.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(2) {
+  border: 3px solid #0076dc;
+  background-color: #0076dc;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/lineup.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(3) {
+  border: 3px solid #677f11;
+  background-color: #677f11;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/games\(2\).png);
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(4) {
+  border: 3px solid #158571;
+  background-color: #158571;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/compatibility.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(5) {
+  border: 3px solid #e11d78;
+  background-color: #e11d78;
+}
+main ul.nav-second-container li.nav-second:nth-child(4) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/faq.png);
+}
+main ul.nav-second-container li.nav-second:nth-child(5) {
+  display: none;
+  background-color: #ff3f3f;
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-leftItems {
+  border: 3px solid #fa6a6a;
+  color: #fff;
+  background-color: #fa6a6a;
+  height: 445px !important;
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-leftItems::before {
+  background: url(../images/indexImages/play-nintendo.jpg) center 100px;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems {
+  border: 3px solid #fa6a6a;
+  color: #fff;
+  background-color: #fa6a6a;
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems::before {
+  background: no-repeat center bottom;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/donkey-kong-diddy-kong.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/lakitu.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/peach.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(5) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/baby-mario-and-yoshi.jpg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) {
+  display: none;
+  background-color: #00bff3;
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-leftItems {
+  border: 3px solid #55d4f7;
+  color: #fff;
+  background-color: #55d4f7;
+  height: 445px !important;
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-leftItems::before {
+  background: url(../images/indexImages/mario.jpg) center 100px;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems {
+  border: 3px solid #55d4f7;
+  color: #fff;
+  background-color: #55d4f7;
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems::before {
+  background: no-repeat center center;
+  background-size: 100px;
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/icon-joy-con.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/threeds-support.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/support-forums.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/digital-purchases.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(5)::before {
+  background-image: url(../images/indexImages/internet-connections.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(6) .nav-second-rightItems:nth-child(6)::before {
+  background-image: url(../images/indexImages/set-up-repair.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(7) {
+  display: none;
+  background-color: #fa6a6a;
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-leftItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+  height: 445px !important;
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-leftItems::before {
+  background: url(../images/indexImages/my-nintendo-mii.jpg) center 100px;
+  background-size: 225px;
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems {
+  border: 3px solid #e70012;
+  color: #fff;
+  background-color: #e70012;
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems::before {
+  background: no-repeat center center;
+  background-size: 130px;
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(1)::before {
+  background-image: url(../images/indexImages/logo-my-nintendo.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(2)::before {
+  background-image: url(../images/indexImages/rewards.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(3)::before {
+  background-image: url(../images/indexImages/missions.svg);
+}
+main ul.nav-second-container li.nav-second:nth-child(7) .nav-second-rightItems:nth-child(4)::before {
+  background-image: url(../images/indexImages/about-points.jpg);
+}
+footer .nav-footer {
+  background-color: #f4f4f4;
+}
+footer .nav-footer .nav-container {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .nav-footer .nav-container ul li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+footer .nav-footer .nav-container ul .nav-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: #484848;
+}
+footer .footer-link {
+  background-color: #444343;
+  color: #cdcdcd;
+  font-size: 12px;
+  padding: 30px;
+}
+footer .footer-link .container {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+}
+footer .footer-link .container .links-container {
+  width: 250px;
+  margin: 0 auto;
+}
+footer .footer-link .container .links-container > div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin: 10px;
+}
+footer .footer-link .container .links-container > div a {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+footer .footer-link .container .links-container > div a:hover {
+  text-decoration: underline;
+}
+footer .footer-link .container p {
+  text-align: center;
+}
+footer .footer-link .container .icon-ESRB {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.backTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: 1s;
+}
+.backTop:hover {
+  cursor: url(../images/indexImages/火.svg), pointer;
+}

@@ -1,0 +1,121 @@
+.total-container {
+  margin-top: -510px;
+}
+.total-container .streamer-container {
+  height: 570px;
+  background: url(../images/gameDetailImages/pokemon/Switch_PokemonCafeMix_bg.jpg);
+  background-size: cover;
+}
+.total-container .streamer-container .streamer {
+  width: 1080px;
+  height: inherit;
+  margin: 0 auto;
+  top: 50px;
+  position: relative;
+}
+.total-container .streamer-container .streamer .img-container {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: inherit;
+}
+.total-container .game-title-contianer {
+  width: 1180px;
+  margin: 120px auto;
+}
+.total-container .game-title-contianer .game-plat {
+  display: inline-block;
+  border-bottom: 3px solid #e60012;
+}
+.total-container .game-title-contianer .add-wish-list {
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.total-container .game-title-contianer .add-wish-list:hover {
+  cursor: pointer;
+  cursor: url(../images/gameDetailImages/mouseHeart1.svg), pointer;
+}
+.total-container .game-title-contianer .add-wish-list:hover .span-add-wish {
+  border-bottom: 3px solid #ab000d;
+  color: #ab000d;
+  transition: 0.3s;
+}
+.total-container .game-title-contianer .add-wish-list .heart {
+  width: 30px;
+  height: 27px;
+  position: relative;
+}
+.total-container .game-title-contianer .add-wish-list .span-add-wish {
+  font-weight: 600;
+  color: #e60012;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s;
+  margin-left: 5px;
+}
+.total-container .intro-carousel {
+  height: 450px;
+  padding-top: 50px;
+  background: url(../images/gameDetailImages/pokemon/Switch_PokemonCafeMix_bg.jpg);
+  background-size: cover;
+}
+.total-container .intro-carousel .carousel-window {
+  width: 1180px;
+  height: 340px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.total-container .intro-carousel .carousel-window .carousel-content {
+  height: 340px;
+  display: grid;
+  transition: 0.7s ease-in-out;
+}
+.total-container .intro-carousel .carousel-window .carousel-content .grid-item {
+  padding: 5px;
+}
+.total-container .intro-carousel .carousel-window .carousel-content .grid-item img {
+  width: 100%;
+}
+.total-container .intro-carousel .carousel-window .carousel-content .small-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.total-container .intro-carousel .carousel-window .carousel-content .small-item img:nth-child(1) {
+  margin-bottom: 2px;
+}
+.total-container .intro-carousel .carousel-window .carousel-content .small-item img:nth-child(2) {
+  margin-top: 2px;
+}
+.total-container .intro-carousel .carousel-control-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  margin: 30px auto;
+}
+.total-container .intro-carousel .carousel-control-box .dots {
+  margin: 0 20px;
+}
+.total-container .intro-carousel .carousel-control-box img {
+  transition: 0.2s;
+  margin: 0 2px;
+}
+.total-container .intro-carousel .carousel-control-box img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+.total-container .game-introduce {
+  width: 1200px;
+  margin: 100px auto;
+}
+.total-container .game-msg-table {
+  width: 1200px;
+  margin: 0 auto 100px;
+}

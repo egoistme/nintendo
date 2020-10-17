@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signInAndReg.css" type="text/css">
+    <link rel="stylesheet" href="css/reg.css" type="text/css">
+</head>
+
+<body>
+    <header><a href="INDEX.html">
+        <div class="logo"></div>
+        <span>Nintendo Account</span>
+    </a>
+    </header>
+    <main>
+        <div class="chooseCard-container">
+            <h1>创建Nintendo Account</h1>
+            <div class="chooseCard-regWay">
+                <p>若拥有以下账号，即可轻松创建Nintendo Account</p>
+                <div class="chooseBtn-container">
+                    <div class="chooseBtn">
+                        <i class="icon icon-facebook"><img src="images/SignInAndRegImages/facebook.png" alt=""
+                                width="20px"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Google"><img src="images/SignInAndRegImages/google.png" alt=""
+                                width="20px"></i>
+                        <span>Google</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Twitter"><img src="images/SignInAndRegImages/twitter.png" alt=""
+                                width="20px"></i>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="chooseBtn">
+                        <i class="icon icon-Apple"><img src="images/SignInAndRegImages/apple.png" alt=""
+                                width="20px"></i>
+                        <span>使用Apple</span>
+                    </div>
+                </div>
+            </div>
+            <div class="regForm">
+                <p>没有上述账号时，请输入以下信息</p>
+                <div class="row">
+                    <div>
+                        <span class="inputLabel">昵称</span>
+                    </div>
+                    <div class="input-container ">
+                        <div class="input-wrapper ">
+                            <input type="text" name="" id="username" placeholder="字符长度10个以内">
+                        </div>
+                        <span class="explanation">※任天堂将于通知时使用，不会擅自泄露给他人</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="inputLabel">邮箱</span>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-wrapper">
+                            <input type="text" name="" id="mail" placeholder="Nintendo@game.com">
+                        </div>
+                        <div class="mail-wrong" style="display: none;margin: 2px; color:#e60012 ;">该邮箱已被注册！</div>
+                        <span class="explanation">※推荐使用PC端电子邮箱或Webmail</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="inputLabel">密码</span>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-wrapper">
+                            <input type="password" name="" id="password" placeholder="8位以上包含半角英文和数字">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="inputLabel">再次输入密码</span>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-wrapper">
+                            <input type="password" name="" id="repassword" placeholder="8位以上包含半角英文和数字">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="inputLabel">性别</span>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-wrapper">
+                            <select name="gender" id="gender">
+                                <option value="nochoose">未选择</option>
+                                <option value="male">男性</option>
+                                <option value="female">女性</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row divline"></div>
+                <div class="check-container">
+                    <input type="checkbox" class="checkbox">
+                    <div>
+                        <p>愿意接受任天堂以邮件方式寄送的游戏软件，智能手机应用程序的最新资讯和优惠活动，以及来自My Nintendo的[可获得点数的问卷]的说明介绍</p>
+                        <p class="explanation">※此规定可随时于账号设置中变更</p>
+                    </div>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="checkbox">
+                    <div>
+                        <p>同意Nintendo Account的<a href="#">使用条款</a>和<a href="#">隐私政策</a></p>
+                    </div>
+                </div>
+                <div class="row divline"></div>
+                <button id="regBtn" onclick="reg()" disabled>注册</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Official Nintendo Website</a>
+            <a href="#" class="chinese">任天堂网站</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Nintendo Account User Agreement</a>
+            <a href="#" class="chinese">使用条款</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Nintendo Privacy Policy</a>
+            <a href="#" class="chinese">隐私政策</a>
+        </div>
+        <div class="link-item m-5">
+            <i></i>
+            <a href="#" class="english hide">Help</a>
+            <a href="#" class="chinese">帮助</a>
+        </div>
+        <div class="language-selector">
+            <span>简体中文</span>
+            <i class="upArrow"></i>
+            <div class="languagesChooseBox">
+                <p id="english">English</p>
+                <p id="jianti">简体中文</p>
+                <p>繁體中文</p>
+                <p>français</p>
+                <p>한국어</p>
+                <p>セーター</p>
+                <p>deutschen</p>
+                <p>русский язык</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mock-min.js.map"></script>
+    <script src="js/mock-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/signInAndReg.js"></script>
+</body>
+
+</html>

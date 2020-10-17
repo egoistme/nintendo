@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/INDEX.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo-Nintendo">
+                <img src="images/indexImages/logo-nintendo.svg" alt="">
+            </a>
+            <div class="searchBox">
+                <input type="text" placeholder="Search games,systems,support,etc">
+                <i class="icon-search"><img src="images/indexImages/search-icon.svg" alt=""></i>
+            </div>
+            <div class="regionChange"><span>Change Region</span><img width="32px"
+                    src="data:image/png;base64,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"
+                    alt=""></div>
+            <a class="login-reg" href="signInAndReg.html" style="display: none;">
+                <img width="30px" src="images/indexImages/logo-my-nintendo.svg" alt="">
+                <span>Log in/Sign up</span>
+            </a>
+            <div class="user-signIn" style="display: flex;">
+                <a href="#" class="username"></a>
+                <img src="" alt="" height="80%">
+            </div>
+        </div>
+        <nav class="nav-main">
+            <ul>
+                <li>Nintendo Switch</li>
+                <li>Nintendo 3DS|2DS</li>
+                <li>Game Store</li>
+                <li>amiibo</li>
+                <li>Play Nintendo</li>
+                <li>SUPPORT</li>
+                <li>My Nintendo</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <i class="backTop" style="display: none;">
+            <img src="images/indexImages/火箭.svg" alt="">
+        </i>
+        <div class="banner">
+            <img src="images/indexImages/1366x493_pss_hero_v3.jpg" alt="" width="100%">
+            <ul class="nav-second-container" style="z-index: -1;">
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">Nintendo Switch lineup</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <button class="nav-second-linkBtn">Buy now</button>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo Switch</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Online service</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo Switch Games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo Switch Lite</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Accessories</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo Labo</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+                <li class="nav-second"  style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">Nintendo 3DS family</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Play anytime,anyplace with our portable systems.</div>
+                            </div>
+                            <button class="nav-second-linkBtn">Buy now</button>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Overview</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo 3DS games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Features</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Built-in software</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">FAQ</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                           <a href="Game-Store.html"> <div class="nav-second-leftItems">
+                                <div class="link-title">Game Store</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Browse,buy,and download games.</div>
+                            </div></a>
+                            <button class="nav-second-linkBtn">All games</button>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Nintendo Switch Games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title"> Nintendo 3DS games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Mobile games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Sales and deals</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Coming soon</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">amiibo</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Supercharge your gameplay</div>
+                            </div>
+                            <button class="nav-second-linkBtn">Buy now</button>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">What is amiibo</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Lineup</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Games</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Compatibility</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">P7FigAE7JfqoA3W4ffjYw6XRyfaDmRsHovfSS</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">Play Nintendo</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Fun stuff for kids</div>
+                            </div>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Friends</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Explore</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">News&tips</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">For parents</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">Support</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Get answers to your questions or contact us for help.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Nintendo Switch</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Nintendo 3DS</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Support forums</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Digital purchases</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Internet connections</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Set up repair</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+                <li class="nav-second" style="display: none;">
+                    <div class="nav-second-items-container">
+                        <div class="nav-second-leftBox">
+                            <div class="nav-second-leftItems">
+                                <div class="link-title">Play Nintendo</div>
+                                <div class="bg-layer"></div>
+                                <div class="link-title-bottom">Fun stuff for kids</div>
+                            </div>
+                        </div>
+                        <div class="nav-second-rightBox">
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Friends</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">Explore</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">News&tips</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                            <div class="nav-second-rightItems">
+                                <div class="link-title">For parents</div>
+                                <div class="bg-layer"></div>
+                            </div>
+                        </div>
+                        <img src="images/indexImages/mario-jumping.svg" alt="" class="floatBgImg1">
+                        <img src="images/indexImages/pipe.svg" alt="" class="floatBgImg2">
+                        <img src="images/indexImages/paratroopa.svg" alt="" class="floatBgImg3">
+                        <img src="images/indexImages/star.svg" alt="" class="floatBgImg4">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg5">
+                        <img src="images/indexImages/question-block.svg" alt="" class="floatBgImg6">
+                        <img src="images/indexImages/brick.svg" alt="" class="floatBgImg7">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-container">
+            <div class="standard">
+                <span>DLC availavle now</span>
+                <button>Visit site ></button>
+                <div class="infoboard">
+                    <div class="info">comic Mischief.Mild Cartoon Vioience</div>
+                    <hr>
+                    <div class="info">User Interact.In-Game Puerchases</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-window">
+                <ul class="carousel-content clearfix">
+                    <li class="carousel-item">
+                        <a href="#">
+                            <div class="picture-container">
+                                <img src="images/indexImages/carousel-img/1.png" alt="">
+                            </div>
+                            <p class="game-title">Watch a replay of the licestream now</p>
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/2.png" alt="">
+                        </div>
+                        <p class="game-title">Pre-purchase now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/3.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/4.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/5.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/6.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/7.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/8.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/9.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/10.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/11.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/12.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="picture-container">
+                            <img src="images/indexImages/carousel-img/13.png" alt="">
+                        </div>
+                        <p class="game-title">Available now</p>
+                        <span class="game-plat">Nintendo Switch</span>
+                    </li>
+                </ul>
+                <div class="traceline-container">
+                    <div class="traceline" style="margin-left:0%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="notice-container">
+            <button class="btn-notice"><span>Shop games</span><i class="icon-rightArrow"><img
+                        src="images/indexImages/btn-rightarrow.svg" alt="" height="30px"></i></button>
+        </div>
+        <div class="diving-line"></div>
+        <div class="explore-gaming-stystems">
+            <h1>Explore gaming systems</h1>
+            <div class="system-switch"></div>
+            <div class="system-title">
+                <span>Nintendo Switch and Nintendo Switch Lite</span>
+                <button class="btn-notice">
+                    <span>Starting at $199.99</span>
+                    <i class="icon-rightArrow"><img src="images/indexImages/btn-rightarrow.svg" alt=""
+                            height="30px"></i>
+                </button></div>
+            <div class="system-2DS"></div>
+            <div class="system-title">
+                <span>New Nintendo 2DS XL</span>
+                <button class="btn-notice">
+                    <span>Starting at $99.99</span>
+                    <i class="icon-rightArrow"><img src="images/indexImages/btn-rightarrow.svg" alt=""
+                            height="30px"></i>
+                </button></div>
+        </div>
+        <div class="diving-line"></div>
+        <div class="trending-games">
+            <h2>Trending games</h2>
+            <div class="game-items-container">
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game1.png" alt="">
+                    </div>
+                    <p class="released-date">03/20/2020</p>
+                    <p class="game-title">Animal Crossing:New horizons</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game2.png" alt="">
+                    </div>
+                    <p class="released-date">06/12/2018</p>
+                    <p class="game-title">Fortnite</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game3.png" alt="">
+                    </div>
+                    <p class="released-date">06/23/2020</p>
+                    <p class="game-title">Pokémon Café Mix</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game4.png" alt="">
+                    </div>
+                    <p class="released-date">07/17/2020</p>
+                    <p class="game-title">Paper Mario™: The Origami King</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+            </div>
+        </div>
+        <div class="diving-line"></div>
+        <div class="news">
+            <h1>News</h1>
+            <div class="news-item-container">
+                <div class="news-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/news1.png" alt="" width="100%">
+                    </div>
+                    <p class="released-date">06/12/2018</p>
+                    <p class="game-title">Deadly Premonition 2: A Blessing in Disguise welcomes you back to a place
+                        where nothing is what it seems.</p>
+                    <p class="news-content">In the year 2005, FBI agent York visits Le Carré, a small town in New
+                        Orleans where he encounters a mysterious serial murder case alongside his “friend” Zach.</p>
+                    <a href="#" class="read-more">Read more ></a>
+                </div>
+                <div class="news-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/news2.png" alt="" width="100%">
+                    </div>
+                    <p class="released-date">06/12/2018</p>
+                    <p class="game-title">Indie highlights! Check out indie games that recently made their way to the
+                        Nintendo Switch system.</p>
+                    <p class="news-content">A ton of great independent games (also known as indies) are coming to the
+                        Nintendo Switch™ system every month. Below, you’ll find a few of the most recent releases.</p>
+                    <a href="#" class="read-more">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="news-box trending-games">
+            <div class="game-items-container">
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game5.png" alt="">
+                    </div>
+                    <p class="released-date">07/09/2020</p>
+                    <p class="game-title">Animal Crossing:Pocket Camp special events!</p>
+                    <a href="#" class="read-more">Read more ></a>
+
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game6.png" alt="">
+                    </div>
+                    <p class="released-date">07/08/2020</p>
+                    <p class="game-title">Donkey Kong Country swings onto Nintendo Switch Online</p>
+                    <a href="#" class="read-more">Read more ></a>
+
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game7.png" alt="">
+                    </div>
+                    <p class="released-date">07/08/2020</p>
+                    <p class="game-title">Shift your libraray into high gear with these racing </p>
+                    <a href="#" class="read-more">Read more ></a>
+
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game8.png" alt="">
+                    </div>
+                    <p class="released-date">07/01/2020</p>
+                    <p class="game-title">The Marine Tour makes a splash in Mario Kart Tour!</p>
+                    <a href="#" class="read-more">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="see-all-news-container">
+            <button class="btn-see-all-news">
+                <span>See all news</span>
+                <i class="icon-rightArrow"><img src="images/indexImages/btn-rightarrow.svg" alt="" height="30px"></i>
+            </button>
+        </div>
+        <div class="diving-line"></div>
+        <div class="trending-games">
+            <h2>New video game releases</h2>
+            <div class="game-items-container">
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game9.png" alt="">
+                    </div>
+                    <p class="released-date">06/23/2020</p>
+                    <p class="game-title">Pokémon Café Mix</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game10.png" alt="">
+                    </div>
+                    <p class="released-date">06/15/2020</p>
+                    <p class="game-title">Jump Rope Challenge</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game11.png" alt="">
+                    </div>
+                    <p class="released-date">06/05/2020</p>
+                    <p class="game-title">Clubhouse Games™：51 Worldwide Classics</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game12.png" alt="">
+                    </div>
+                    <p class="released-date">05/29/2020</p>
+                    <p class="game-title">Xenoblade Chronicles™ Definitive Edition</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+            </div>
+        </div>
+        <div class="Characters">
+            <h2>Characters</h2>
+            <div class="character-container">
+                <div class="character-item">
+                    <div class="character-img-container">
+                        <img src="images/indexImages/character1.png" alt="">
+                    </div>
+                    <h3 class="character-title">
+                        Mario™
+                    </h3>
+                </div>
+                <div class="character-item">
+                    <div class="character-img-container">
+                        <img src="images/indexImages/character2.png" alt="">
+                    </div>
+                    <h3 class="character-title">
+                        The Legend of Zelda™
+                    </h3>
+                </div>
+                <div class="character-item">
+                    <div class="character-img-container">
+                        <img src="images/indexImages/character3.png" alt="">
+                    </div>
+                    <h3 class="character-title">
+                        Animal Crossing™
+                    </h3>
+                </div>
+                <div class="character-item">
+                    <div class="character-img-container">
+                        <img src="images/indexImages/character4.png" alt="">
+                    </div>
+                    <h3 class="character-title">
+                        Kirby™
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="diving-line"></div>
+        <div class="trending-games">
+            <h2>Your recently viewed items</h2>
+            <div class="game-items-container">
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game13.png" alt="">
+                    </div>
+                    <p class="released-date">Released 03/20/2020</p>
+                    <p class="game-title">Animal Crossing:New horizons</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game14.png" alt="">
+                    </div>
+                    <p class="released-date">Released 06/12/2018</p>
+                    <p class="game-title">Xenoblade Chronicles™ Definitive Editione</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game15.png" alt="">
+                    </div>
+                    <p class="released-date">Released 06/23/2020</p>
+                    <p class="game-title">Jump Rope Challenge</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+                <div class="game-item">
+                    <div class="picture-container">
+                        <img src="images/indexImages/game16.png" alt="">
+                    </div>
+                    <p class="released-date">Released 07/17/2020</p>
+                    <p class="game-title">Paper Mario™: The Origami King</p>
+                    <span class="game-plat">Nintendo Switch</span>
+                </div>
+            </div>
+        </div>
+        <div class="diving-line"></div>
+        <div class="main-last-tip">
+            <small>MSRP: Manufacturer's Retail Price. Actual price may vary. See retailer for details.</small>
+
+        </div>
+    </main>
+    <footer>
+        <div class="nav-footer">
+            <div class="nav-container">
+                <ul>
+                    <li class="nav-title"><a href="#">About Nintendo</a></li>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#">CSR Report</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-title"><a href="#">Where To Buy</a></li>
+                    <li><a href="Game-Store.html">Game Store</a></li>
+                    <li><a href="#">Online Retailers</a></li>
+                    <li><a href="#">Nintendo NY</a></li>
+                    <li><a href="#">Nintendo Store</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-title"><a href="#">Support</a></li>
+                    <li><a href="#">Health & Safety Precautions</a></li>
+                    <li><a href="#">Updated Warranty</a></li>
+                    <li><a href="#">Nintendo Switch Support</a></li>
+                    <li><a href="#">Wii U Support</a></li>
+                    <li><a href="#">Nintendo 3DS Support</a></li>
+                    <li><a href="#">Repair Help</a></li>
+                    <li><a href="#">Nintendo Product Recycling</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-title"><a href="#">Parents</a></li>
+                    <li><a href="#">Info for Parents</a></li>
+                    <li><a href="#">Parental Controls</a></li>
+
+                </ul>
+                <ul>
+                    <li class="nav-title"><a href="#">Legal</a></li>
+                    <li><a href="#">Documents and Policies</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-title"><a href="#">Privacy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Interest-Based Ads</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="container">
+                <div class="icon-ESRB"><img src="images/indexImages/icon-ESRB.png" alt=""></div>
+                <div class="links-container">
+                    <div class="box1">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Website Feedback</a>
+                    </div>
+                    <div class="box2">
+                        <div class="pic-container">
+                            <img src="images/indexImages/icon-facebook.png" alt="">
+                        </div>
+                        <div class="pic-container">
+                            <img src="images/indexImages/icon-twitter.png" alt="">
+                        </div>
+                        <div class="pic-container">
+                            <img src="images/indexImages/icon-youtuber.png" alt="">
+                        </div>
+                        <div class="pic-container">
+                            <img src="images/indexImages/icon-instagram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <p>© 2020 Nintendo.Nintendo of America Inc. Headquarters are in Redmond, Washington</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jQuery-3.5.1-min.js"></script>
+    <script src="js/mock-min.js.map"></script>
+    <script src="js/mock-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/INDEX.js"></script>
+</body>
+
+</html>

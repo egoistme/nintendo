@@ -1,0 +1,140 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 50px;
+  background-color: #e60012;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: #f9f9f9;
+  padding-bottom: 80px;
+  //    background: url(../images/indexImages/bg-amiibo.png);
+  .title-container {
+    background-color: #ffffff;
+    h1 {
+      width: 960px;
+      margin: 50px auto;
+      font-weight: 700;
+      color: #5a1216;
+    }
+  }
+  .list-container {
+    width: 960px;
+    margin: 80px auto 0;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    min-height: 600px;
+    box-shadow: 0 0 2px #cccccc;
+
+    .userMsg {
+      background-color: #fdfdfd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .user-head-container {
+        width: 80px;
+        height: 80px;
+      }
+      .name-gender {
+        display: inline-block;
+        margin-top: 30px;
+        position: relative;
+        margin-left: -15px;
+        .gender-container {
+          width: 20px;
+          position: absolute;
+          right: -25px;
+          top: 3px;
+        }
+      }
+    }
+    .cart {
+      background-color: #ffffff;
+
+      .item-game {
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        padding: 20px;
+        box-shadow: 0 0 4px #ebe2e3;
+        .pic-container{
+          &:hover{
+            cursor: pointer;
+          }
+
+        }
+        .game-content {
+          display: flex;
+          align-items: center;
+          p {
+            padding-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            color: #484848;
+          }
+        }
+        .btn-download-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            outline: none;
+            border: none;
+            height: 30px;
+            background-color: #e60012;
+            color: #ffffff;
+            padding: 0 10px;
+            border-radius: 5px;
+            &:hover {
+              background-color: #ed4c59;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+    background-color: #e60012;
+    padding: 20px;
+    a{
+        color: white;
+        font-size: 14px;
+        &:hover{
+            color: #cdcdcd;
+        }
+    }
+    ul{
+        li{
+            margin: 10px;
+        }
+    }
+    .logo-footer{
+        font-size: 12px;
+        p{
+            text-align: center;
+            margin: 5px;
+            color: #fdfdfd;
+        }
+    }
+}
