@@ -205,7 +205,7 @@ main .banner {
   overflow: hidden;
 }
 main .banner > img {
-  min-width: 1900px;
+  width: 100%;
   position: absolute;
   z-index: -1;
 }

@@ -18,6 +18,11 @@ main .store-title-container .flexBox {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1440px) {
+  main .store-title-container .flexBox {
+    width: 1280px;
+  }
+}
 main .store-title-container .flexBox ul li {
   display: inline-block;
   background-color: #ff7d00;
@@ -39,6 +44,11 @@ main .search-input-row .flexBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  main .search-input-row .flexBox {
+    width: 1280px;
+  }
 }
 main .search-input-row .flexBox .search-input-container {
   display: flex;
@@ -67,6 +77,11 @@ main .content {
   width: 1440px;
   margin: 30px auto;
   display: flex;
+}
+@media screen and (max-width: 1440px) {
+  main .content {
+    width: 1280px;
+  }
 }
 main .content .none {
   width: 25%;
